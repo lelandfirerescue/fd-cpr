@@ -29,7 +29,7 @@
           }
           header nav a {
               margin-right: 24px;
-              color: #cccccc;
+              color: #ccc;
               font-weight: 300;
           }
           header nav a.logo {
@@ -51,6 +51,9 @@
               border-radius:64px;
               line-height:64px;
           }
+          .circle.center {
+              margin:auto auto;
+          }
           .circle-dark {
               background-color:#333333;
           }
@@ -68,11 +71,14 @@
               padding-bottom: 32px;
           }
           section.intro {
-              margin-top: 60px;
+              margin-top: 72px;
               padding-top: 0;
           }
           section.about {
               background-color: #333333;
+          }
+          .logo-col {
+              text-align: center;
           }
       </style>
   </head>
@@ -90,16 +96,14 @@
       </header>
 
       <section class="intro">
-          <div class="container-fluid">
+          <div class="container">
               <div class="row">
-                  <div class="col-md-4">
-                      <div class="center-block">
-                          <div class="circle circle-dark">
-                              <img src="images/leland-logo-sm-dark.png" alt="Leland Volunteer Fire/Rescue Department" height="128" width="128" />
-                          </div>
-                      </div>
+                  <div class="col-md-3 col-sm-2 logo-col">
+                    <div class="circle circle-dark">
+                        <img src="images/leland-logo-sm-dark.png" alt="Leland Volunteer Fire/Rescue Department" height="128" width="128" />
+                    </div>
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-6 col-sm-8">
                       <h1>Future home of <strong>www.fd-cpr.com</strong></h1>
                       <p>Some resources:</p>
                       <ul>
