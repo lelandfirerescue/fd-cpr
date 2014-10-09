@@ -25,6 +25,7 @@
               height: 60px;
               font-size: 14px;
               line-height: 60px;
+              background-color:#272b30;
           }
           header nav a {
               margin-right: 24px;
@@ -32,7 +33,9 @@
               font-weight: 300;
           }
           header nav a.logo {
-              font-weight: 600;
+              font-size: 18px;
+              font-weight: 800;
+              color:#f0ad4e;
           }
           .circle {
               width:160px;
@@ -60,8 +63,13 @@
           .circle img {
               vertical-align:middle;
           }
+          section {
+              padding-top: 32px;
+              padding-bottom: 32px;
+          }
           section.intro {
-
+              margin-top: 60px;
+              padding-top: 0;
           }
           section.about {
               background-color: #333333;
@@ -83,21 +91,24 @@
 
       <section class="intro">
           <div class="container-fluid">
-              <div class="circle circle-dark">
-                  <img src="images/leland-logo-sm-dark.png" alt="Leland Volunteer Fire/Rescue Department" height="128" width="128" />
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="center-block">
+                          <div class="circle circle-dark">
+                              <img src="images/leland-logo-sm-dark.png" alt="Leland Volunteer Fire/Rescue Department" height="128" width="128" />
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-8">
+                      <h1>Future home of <strong>www.fd-cpr.com</strong></h1>
+                      <p>Some resources:</p>
+                      <ul>
+                          <li><a href="http://cdn.christopherwatford.com/emtoday2014/EM+Today+2014+-+Firefighter+Down+-+4-3.pptx">EM Today 2014: Presentation</a></li>
+                      </ul>
+                  </div>
               </div>
           </div>
       </section>
-
-    <section class="about">
-        <div class="container-fluid">
-            <h1>Future home of <strong>www.fd-cpr.com</strong></h1>
-            <p>Some resources:</p>
-            <ul>
-                <li><a href="http://cdn.christopherwatford.com/emtoday2014/EM+Today+2014+-+Firefighter+Down+-+4-3.pptx">EM Today 2014: Presentation</a></li>
-            </ul>
-        </div>
-    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
