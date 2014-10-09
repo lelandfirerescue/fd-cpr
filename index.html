@@ -16,34 +16,88 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
       <style type="text/css">
-          .logo {
-              width: 128px;
-              height: 128px;
-              margin: -8px auto 16px;
+          header {
+              position: fixed;
+              z-index:9999;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 60px;
+              font-size: 14px;
+              line-height: 60px;
+          }
+          header nav a {
+              margin-right: 24px;
+              color: white;
+              font-weight: 300;
+          }
+          header nav a.logo {
+              font-weight: 600;
+          }
+          .circle {
+              width:160px;
+              height:160px;
+              border-radius:160px;
+              line-height:160px;
+              text-align:center;
+              display:inline-block;
+          }
+          .circle.sm {
+              width:64px;
+              height:64px;
+              border-radius:64px;
+              line-height:64px;
+          }
+          .circle-dark {
+              background-color:#333333;
+          }
+          .circle-light {
+              background-color:#cccccc;
+          }
+          .circle-blue {
+              background-color:#428bca;
+          }
+          .circle img {
+              vertical-align:middle;
+          }
+          section.intro {
+
+          }
+          section.about {
+              background-color: #333333;
           }
       </style>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+      <header>
+          <nav class="container">
+              <a href="/" class="logo">FD-CPR</a>
 
-    <div class="logo">
-        <img src="images/leland-logo-sm-dark.png" alt="Leland Volunteer Fire/Rescue Department" height="128" width="128" />
-    </div>
+              <span class="nav-items">
+                  <a href="#About">About</a>
+                  <a href="#Video">Video</a>
+                  <a href="#Contact">Contact</a>
+              </span>
+          </nav>
+      </header>
 
-    <main class="container-fluid">
-      <h1>Future home of <strong>www.fd-cpr.com</strong></h1>
-      <p>Some resources:</p>
-      <ul>
-        <li><a href="http://cdn.christopherwatford.com/emtoday2014/EM+Today+2014+-+Firefighter+Down+-+4-3.pptx">EM Today 2014: Presentation</a></li>
-      </ul>
-    </main>
+      <section class="intro">
+          <div class="container-fluid">
+              <div class="circle circle-dark">
+                  <img src="images/leland-logo-sm-dark.png" alt="Leland Volunteer Fire/Rescue Department" height="128" width="128" />
+              </div>
+          </div>
+      </section>
+
+    <section class="about">
+        <div class="container-fluid">
+            <h1>Future home of <strong>www.fd-cpr.com</strong></h1>
+            <p>Some resources:</p>
+            <ul>
+                <li><a href="http://cdn.christopherwatford.com/emtoday2014/EM+Today+2014+-+Firefighter+Down+-+4-3.pptx">EM Today 2014: Presentation</a></li>
+            </ul>
+        </div>
+    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
