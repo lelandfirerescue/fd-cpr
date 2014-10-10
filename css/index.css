@@ -34,6 +34,7 @@ header nav a.logo {
     line-height:160px;
     text-align:center;
     display:inline-block;
+    margin: 20px;
 }
 
 .circle.sm {
@@ -48,7 +49,8 @@ header nav a.logo {
 }
 
 .circle-dark {
-    background-color:#333333;
+    background-color: #333333;
+    background-color:rgba(51, 51, 51, 0.6);
 }
 
 .circle-light {
@@ -59,19 +61,29 @@ header nav a.logo {
     background-color:#428bca;
 }
 
-.circle img {
+.circle>img {
     vertical-align:middle;
+    opacity: 1;
 }
 
 section {
     padding-top: 32px;
     padding-bottom: 48px;
+    background-color: #272b30;
 }
 
 section.intro {
     margin-top: 72px;
     padding-top: 0;
-    min-height: 360px;
+    background-color: transparent;
+}
+
+body {
+    background-image: url('../images/header-bg.jpg');
+    /*background-attachment: fixed;*/
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .media-object {
