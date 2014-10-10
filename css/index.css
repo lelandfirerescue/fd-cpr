@@ -21,6 +21,9 @@ header nav a.logo {
     font-size: 18px;
     font-weight: 800;
     color:#d9534f;
+    margin-left: 60px;
+    line-height: 60px;
+    background-image: url('images/fd-cpr-logo-sm.png');
 }
 
 .circle {
