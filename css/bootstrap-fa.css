@@ -2240,7 +2240,7 @@ select[multiple].input-group-sm>.form-control, select[multiple].input-group-sm>.
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     border: 1px solid transparent;
 }
 @media (min-width:768px) {
@@ -4583,8 +4583,8 @@ a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover {
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1,  CSS: MIT License)
  */@font-face {
     font-family: FontAwesome;
-    src: url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0);
-    src: url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0) format('embedded-opentype'), url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0) format('woff'), url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0) format('truetype'), url(//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular) format('svg');
+    src: url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0);
+    src: url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0) format('embedded-opentype'), url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0) format('woff'), url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0) format('truetype'), url(http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular) format('svg');
     font-weight: 400;
     font-style: normal;
 }

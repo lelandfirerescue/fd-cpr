@@ -5,7 +5,6 @@ header {
     left: 0;
     width: 100%;
     font-size: 14px;
-    background-color:#272b30;
 }
 
 header nav a {
@@ -66,16 +65,64 @@ header nav a.logo {
 
 section {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 48px;
 }
 
 section.intro {
     margin-top: 72px;
     padding-top: 0;
+    min-height: 360px;
+}
+
+.media-object {
+    max-width: 128px;
 }
 
 section.about {
-    
+    background-color: #bbb;
+    color: #222;
+}
+
+h1 {
+    font-family: 'Changa One', sans-serif;
+    text-shadow: none;
+    padding-bottom: 4px;
+    border-bottom: 1px dashed #444;
+}
+
+section.about h1 {
+    border-bottom: 1px dashed #999;
+    text-align: center;
+}
+
+section .leader {
+    float: left;
+    margin: 12px;
+    max-width: 72px;
+    font-size: 60px;
+    color:#d9534f;
+}
+
+section.video h1, section.science h1, section.about h1 {
+    text-align: center;
+}
+
+section.video img {
+    display: block;
+    margin: auto auto;
+}
+
+section.science {
+    background-color: #888;
+}
+
+section.science .inner {
+    background-color:#272b30;
+    padding-bottom: 8px;
+}
+
+section.spacer {
+    min-height: 400px;
 }
 
 .logo-col {
@@ -85,7 +132,7 @@ section.about {
 footer {
     text-align: center;
     font-size: 12px;
-    background-color: #888888;
+    background-color: #888;
 }
 
 footer .container {
@@ -96,6 +143,68 @@ footer .container {
 p.copyright {
 }
 
-section.spacer {
-    min-height: 500px;
+.share-toolbar {
+    margin-top: 12px;
+    text-align: center;
 }
+
+.btn-twitter {
+    background: #00acee;
+    border-radius: 0;
+    color: #fff
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff
+}
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0087bd;
+    color: #fff
+}
+.btn-facebook {
+    background: #3b5998;
+    border-radius: 0;
+    color: #fff
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}
+.btn-googleplus {
+    background: #e93f2e;
+    border-radius: 0;
+    color: #fff
+}
+.btn-googleplus:link, .btn-googleplus:visited {
+    color: #fff
+}
+.btn-googleplus:active, .btn-googleplus:hover {
+    background: #ba3225;
+    color: #fff
+}
+.btn-stumbleupon {
+    background: #f74425;
+    border-radius: 0;
+    color: #fff
+}
+.btn-stumbleupon:link, .btn-stumbleupon:visited {
+    color: #fff
+}
+.btn-stumbleupon:active, .btn-stumbleupon:hover {
+    background: #c7371e;
+    color: #fff
+}
+.btn-linkedin {
+    background: #0e76a8;
+    border-radius: 0;
+    color: #fff
+}
+.btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff
+}
+.btn-linkedin:active, .btn-linkedin:hover {
+    background: #0b6087;
+    color: #fff
+}
