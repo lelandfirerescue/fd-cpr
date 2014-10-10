@@ -17,6 +17,7 @@ header nav a {
 }
 
 header nav a.logo {
+    font-family: 'Changa One', sans-serif;
     font-size: 18px;
     font-weight: 800;
     color:#d9534f;
