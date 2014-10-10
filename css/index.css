@@ -18,12 +18,15 @@ header nav a {
 
 header nav a.logo {
     font-family: 'Changa One', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 24px;
     color:#d9534f;
-    margin-left: 60px;
+    padding-left: 44px;
     line-height: 60px;
-    background-image: url('images/fd-cpr-logo-sm.png');
+    display: inline-block;
+    background-image: url('../images/fd-cpr-logo-sm.png');
+    background-repeat: no-repeat;
+    background-size: 36px 36px;
+    background-position: left;
 }
 
 .circle {
