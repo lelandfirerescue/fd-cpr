@@ -114,6 +114,14 @@ section.about h1 {
     text-align: center;
 }
 
+section.contact {
+    margin-top: 90px;
+}
+
+code {
+    background: inherit;
+}
+
 section .leader {
     float: left;
     margin: 12px;
