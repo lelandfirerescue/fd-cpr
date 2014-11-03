@@ -94,7 +94,7 @@ body.with-header-logo {
     max-width: 128px;
 }
 
-section.about {
+section.about, section.alternate-bg {
     background-color: #bbb;
     color: #222;
 }
