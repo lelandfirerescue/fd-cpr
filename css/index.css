@@ -72,6 +72,10 @@ section {
     background-color: #272b30;
 }
 
+header + section {
+    margin-top: 72px;
+}
+
 section.intro {
     margin-top: 72px;
     padding-top: 0;
@@ -79,6 +83,14 @@ section.intro {
 }
 
 body {
+    background-image: url('../images/header-bg.jpg');
+    /*background-attachment: fixed;*/
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+body.main {
     background-image: url('../images/header-bg.jpg');
     /*background-attachment: fixed;*/
     background-position: top;
