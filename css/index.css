@@ -99,9 +99,12 @@ section.about, section.alternate-bg {
     color: #222;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'Changa One', sans-serif;
     text-shadow: none;
+}
+
+h1, h2, h3 {
     padding-bottom: 4px;
     border-bottom: 1px dashed #444;
 }
