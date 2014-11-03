@@ -82,15 +82,7 @@ section.intro {
     background-color: transparent;
 }
 
-body {
-    background-image: url('../images/header-bg.jpg');
-    /*background-attachment: fixed;*/
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-body.main {
+body.with-header-logo {
     background-image: url('../images/header-bg.jpg');
     /*background-attachment: fixed;*/
     background-position: top;
