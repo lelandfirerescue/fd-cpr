@@ -74,11 +74,10 @@ section {
 
 header + section {
     margin-top: 72px;
+    padding-top: 0;
 }
 
 section.intro {
-    margin-top: 72px;
-    padding-top: 0;
     background-color: transparent;
 }
 
@@ -119,7 +118,7 @@ section.contact {
 }
 
 code {
-    background: inherit;
+    background: none;
 }
 
 section .leader {
