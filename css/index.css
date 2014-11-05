@@ -34,7 +34,7 @@ header nav a.logo {
     line-height:160px;
     text-align:center;
     display:inline-block;
-    margin: 32px;
+    margin: 16px;
 }
 
 .circle.sm {
@@ -70,36 +70,40 @@ section {
     padding-top: 32px;
     padding-bottom: 48px;
     background-color: #272b30;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 header + section {
     margin-top: 72px;
     padding-top: 0;
+    box-shadow: none;
 }
 
 section.intro {
     background-color: transparent;
 }
 
-body.with-header-logo {
-    background-image: url('../images/header-bg.jpg');
-    /*background-attachment: fixed;*/
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 100%;
+.with-header-logo {
+    background: url('../images/header-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.well {
+    color: #c8c8c8;
 }
 
 .media-object {
     max-width: 128px;
 }
 
-section.about, section.alternate-bg {
+section.about, section.with-alternate-bg {
     background-color: #bbb;
     color: #222;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    background: url('../images/intro.png');
 }
 
 h1, h2, h3 {
-    font-family: 'Changa One', sans-serif;
     text-shadow: none;
 }
 
@@ -157,13 +161,62 @@ section.spacer {
 }
 
 .logo-col {
-    text-align: center;
+
+}
+
+.title {
+    font-family: "Changa One", sans-serif;
+    font-size: 28px;
+    /*text-align: center;*/
+    color: #f1f1f1;
+    text-shadow: 1px 1px 1px #333;
+    padding-top: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: -8px;
+    margin-left: 24px;
+    margin-right: 24px;
+    color: #eee;
+    text-shadow: 1px 1px 1px #333;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 48px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .subtitle {
+        font-size: 32px;
+    }
 }
 
 footer {
     text-align: center;
     font-size: 12px;
     background-color: #888;
+    color: #eee;
+    background: url('../images/intro.png');
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 footer .container {
