@@ -66,7 +66,7 @@
           </nav>
       </header>
 
-      <section class="intro">
+      <section class="intro" role="banner">
           <div class="container">
               <div class="row">
                   <div class="col-md-10 col-md-offset-1 logo-col">
@@ -80,13 +80,13 @@
           </div>
       </section>
 
-      <section class="about with-alternate-bg" id="About">
+      <section class="about with-alternate-bg" id="About" role="article">
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
               <h1>Why FD-CPR?</h1>
               <p>
-                <img src="images/fd-cpr-logo-lg.png" alt="FD-CPR Logo" class="leader" />
+                <img src="images/fd-cpr-logo-lg.png" alt="FD-CPR Logo" class="leader" aria-hidden="true" />
                 When the unthinkable happens, and a firefighter collapses on an emergency scene, we need to be prepared
                 to provide the highest level of care possible. We know that good neurological outcomes can be had in
                 out of hospital cardiac arrest provided high quality chest compressions are initiated early.
@@ -101,7 +101,7 @@
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row" role="complementary">
             <div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-2">
                 <div class="well">
                     <div class="media">
@@ -109,7 +109,7 @@
                             <img src="images/emtoday2014-presentation-thumb.jpg" alt="Firefighter Down! Special Consideration for the Resuscitation of the Downed Firefighter" class="media-object img-thumbnail" />
                         </a>
                         <div class="media-body">
-                            <p class="h4 media-heading">EM Today 2014 Presentation</p>
+                            <p class="h4 media-heading" role="heading">EM Today 2014 Presentation</p>
                             <p>Firefighter Down! Special Consideration for the Resuscitation of the Downed Firefighter.</p>
                             <p class="text-right"><a href="http://cdn.fd-cpr.com/presentations/EM%20Today%202014%20-%20Firefighter%20Down.pdf"><em>3.2 mb .PDF (with notes)</em> <span class="fa fa-file-pdf-o" aria-hidden="true"></span></a></p>
                             <p class="text-right"><a href="http://cdn.fd-cpr.com/presentations/EM%20Today%202014%20-%20Firefighter%20Down.pptx"><em>23 mb .PPTX</em> <span class="fa fa-file-powerpoint-o" aria-hidden="true"></span></a></p>
@@ -118,7 +118,7 @@
                 </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" role="complementary">
             <div class="col-md-6 col-md-offset-4 col-sm-8 col-sm-offset-2">
                 <div class="well">
                     <div class="media">
@@ -126,7 +126,7 @@
                             <img src="images/fdcpr-10step-thumb.png" alt="FD-CPR 10-Step Process Slides for Instructors" class="media-object img-thumbnail" />
                         </a>
                         <div class="media-body">
-                            <p class="h4 media-heading">FD-CPR 10-Step Process</p>
+                            <p class="h4 media-heading" role="heading">FD-CPR 10-Step Process</p>
                             <p>10-step process slides for instructors to use during training.</p>
                             <p class="text-right"><a href="http://cdn.fd-cpr.com/presentations/FD-CPR%2010%20step%20process.pdf"><em>208 kb .PDF</em> <span class="fa fa-file-pdf-o" aria-hidden="true"></span></a></p>
                             <p class="text-right"><a href="http://cdn.fd-cpr.com/presentations/FD-CPR%2010%20step%20process.pptx"><em>63 kb .PPTX</em> <span class="fa fa-file-powerpoint-o" aria-hidden="true"></span></a></p>
@@ -138,7 +138,7 @@
         </div>
       </section>
 
-      <section class="video" id="Video">
+      <section class="video" id="Video" role="complementary">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
@@ -165,11 +165,13 @@
         </div>
       </section>
 
-      <footer>
+      <footer role="contentinfo">
           <div class="container">
               <div class="row text-center">
-                  <a href="https://www.facebook.com/lelandfirerescue/" target="_blank"><img src="images/leland-logo-sm.png" width="72" alt="Leland Volunteer Fire/Rescue Department, Inc." /></a>
-                  &nbsp;<a href="https://www.facebook.com/ancientarborproductions/" target="_blank"><img src="images/aap-logo-sm.png" width="72" alt="Ancient Arbor Productions" /></a>
+                <ul class="list-inline">
+                  <li><a href="https://www.facebook.com/lelandfirerescue/" target="_blank"><img src="images/leland-logo-sm.png" width="72" alt="Leland Volunteer Fire/Rescue Department, Inc." /></a></li>
+                  <li><a href="https://www.facebook.com/ancientarborproductions/" target="_blank"><img src="images/aap-logo-sm.png" width="72" alt="Ancient Arbor Productions" /></a></li>
+                </ul>
               </div>
               <br />
               <br />
