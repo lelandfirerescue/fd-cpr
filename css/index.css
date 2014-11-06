@@ -232,6 +232,15 @@ p.copyright {
     text-align: center;
 }
 
+ul.share-toolbar {
+    list-style: none;
+    padding: 0;
+}
+
+.share-toolbar li {
+    display: inline;
+}
+/*
 .btn-twitter {
     background: #00acee;
     border-radius: 0;
@@ -292,3 +301,4 @@ p.copyright {
     background: #0b6087;
     color: #fff
 }
+*/

@@ -4407,8 +4407,8 @@ fieldset[disabled] .btn-stumbleupon.active {
 }
 .btn-twitter {
   color: #fff;
-  background-color: #55acee;
-  border-color: #147bc9;
+  background-color: #007fb0;
+  border-color: #00354a;
 }
 .btn-twitter:hover,
 .btn-twitter:focus,
@@ -4417,8 +4417,8 @@ fieldset[disabled] .btn-stumbleupon.active {
 .btn-twitter.active,
 .open > .dropdown-toggle.btn-twitter {
   color: #fff;
-  background-color: #2795e9;
-  border-color: #0f5991;
+  background-color: #005a7d;
+  border-color: #00090d;
 }
 .btn-twitter:active,
 .btn-twitter.active,
@@ -4443,11 +4443,11 @@ fieldset[disabled] .btn-twitter:active,
 .btn-twitter.disabled.active,
 .btn-twitter[disabled].active,
 fieldset[disabled] .btn-twitter.active {
-  background-color: #55acee;
-  border-color: #147bc9;
+  background-color: #007fb0;
+  border-color: #00354a;
 }
 .btn-twitter .badge {
-  color: #55acee;
+  color: #007fb0;
   background-color: #fff;
 }
 .btn-link {
