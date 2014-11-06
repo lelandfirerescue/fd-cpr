@@ -4227,8 +4227,8 @@ fieldset[disabled] .btn-delicious.active {
 }
 .btn-googleplus {
   color: #fff;
-  background-color: #dd4b39;
-  border-color: #96271a;
+  background-color: #d44230;
+  border-color: #83271b;
 }
 .btn-googleplus:hover,
 .btn-googleplus:focus,
@@ -4237,8 +4237,8 @@ fieldset[disabled] .btn-delicious.active {
 .btn-googleplus.active,
 .open > .dropdown-toggle.btn-googleplus {
   color: #fff;
-  background-color: #c23321;
-  border-color: #621a11;
+  background-color: #ad3324;
+  border-color: #501811;
 }
 .btn-googleplus:active,
 .btn-googleplus.active,
@@ -4263,11 +4263,11 @@ fieldset[disabled] .btn-googleplus:active,
 .btn-googleplus.disabled.active,
 .btn-googleplus[disabled].active,
 fieldset[disabled] .btn-googleplus.active {
-  background-color: #dd4b39;
-  border-color: #96271a;
+  background-color: #d44230;
+  border-color: #83271b;
 }
 .btn-googleplus .badge {
-  color: #dd4b39;
+  color: #d44230;
   background-color: #fff;
 }
 .btn-facebook {
