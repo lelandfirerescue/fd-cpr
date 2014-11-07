@@ -21,7 +21,7 @@ header nav a.logo {
     margin-left: 6px;
     line-height: 50px;
     display: inline-block;
-    background-image: url('../images/fd-cpr-logo-sm.png');
+    background-image: url('http://cdn.fd-cpr.com/assets/images/fd-cpr-logo-sm.png');
     background-repeat: no-repeat;
     background-size: 36px 36px;
     background-position: left;
@@ -84,7 +84,7 @@ section.intro {
 }
 
 .with-header-logo {
-    background: url('../images/header-bg.jpg') no-repeat center center fixed;
+    background: url('http://cdn.fd-cpr.com/assets/images/header-bg.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -100,7 +100,7 @@ section.about, section.with-alternate-bg {
     background-color: #bbb;
     color: #222;
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    background: url('../images/intro.png');
+    background: url('http://cdn.fd-cpr.com/assets/images/intro.png');
 }
 
 h1, h2, h3 {
@@ -215,7 +215,7 @@ footer {
     font-size: 12px;
     background-color: #888;
     color: #eee;
-    background: url('../images/intro.png');
+    background: url('http://cdn.fd-cpr.com/assets/images/intro.png');
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
