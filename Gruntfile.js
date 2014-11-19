@@ -36,7 +36,8 @@ module.exports = function (grunt) {
       js: {
         src: [
           'components/thirdparty-js/jquery-2.1.1.js',
-          'components/bootstrap-3.3.0/dist/js/bootstrap.min.js'
+          'components/bootstrap-3.3.0/dist/js/bootstrap.min.js',
+          'components/thirdparty-js/lazy-youtube.min.js'
         ],
         dest: 'js/dist.js'
       },
@@ -59,6 +60,13 @@ module.exports = function (grunt) {
         src: 'css/dist.css',
         dest: 'css/dist.min.css'
       }
+    },
+
+    uglify: {
+      dist: {
+        src: 'components/thirdparty-js/lazy-youtube.js',
+        dest: 'components/thirdparty-js/lazy-youtube.min.js'
+      }
     }
     
   });
@@ -70,6 +78,8 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('dist-css', ['concat:css', 'cssmin:minify']);
+
+  grunt.registerTask('js-min', ['uglify:dist']);
 
   // JS distribution task  
   grunt.registerTask('dist-js', ['concat:iejs', 'concat:js']);
