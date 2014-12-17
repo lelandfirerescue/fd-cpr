@@ -1,5 +1,64 @@
 @import (reference) "../components/bootstrap-3.3.0/less/bootstrap.less";
 
+/* index.html*/
+.logo-col {
+  .make-md-column(10);
+  .make-md-column-offset(1);
+}
+
+.about-col {
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-md-column(8);
+  .make-md-column-offset(2);
+}
+
+.about-media-col {
+  .make-xs-column(8);
+  .make-xs-column-offset(2);
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-md-column(6);
+  .make-md-column-offset(4);
+}
+
+.main-video-col {
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-md-column(8);
+  .make-md-column-offset(2);
+}
+
+.contact-col {
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-md-column(8);
+  .make-md-column-offset(2);
+}
+
+.contact-photo-col {
+  .make-sm-column(4);
+  .make-md-column(3);
+  .make-md-column-offset(2);
+}
+
+.contact-bio-col {
+  .make-sm-column(8);
+  .make-md-column(5);
+}
+
+/* faq.html */
+.faq-col {
+  .make-xs-column(12);
+  .make-sm-column(8);
+  .make-sm-column-offset(2);
+  .make-md-column(8);
+  .make-md-column-offset(2);
+  .make-lg-column(6);
+  .make-lg-column-offset(3);
+}
+
+/* steps.html */
 .video-row {
   .make-row();
   
@@ -15,19 +74,42 @@
 }
 
 .video-header-col {
-  .make-md-column(6);
-  .make-md-column-offset(3);
+  .make-xs-column(12);
   .make-sm-column(8);
   .make-sm-column-offset(2);
-  .make-xs-column(12);
+  .make-md-column(6);
+  .make-md-column-offset(3);
 }
 
 .video-col {
-  .make-lg-column(8);
-  .make-lg-column-offset(2);
-  .make-md-column(6);
-  .make-md-column-offset(3);
+  .make-xs-column(12);
   .make-sm-column(8);
   .make-sm-column-offset(2);
-  .make-xs-column(12);
+  .make-md-column(6);
+  .make-md-column-offset(3);
+  .make-lg-column(8);
+  .make-lg-column-offset(2);
+}
+
+/* footer */
+.footer-col-left {
+  .make-xs-column(8);
+  .make-xs-column-offset(2);
+  .make-sm-column(4);
+  .make-sm-column-offset(1);
+  .make-md-column(3);
+  .make-md-column-offset(2);
+  
+  .text-center();
+}
+
+.footer-col-right {
+  .make-xs-column(8);
+  .make-xs-column-offset(2);
+  .make-sm-column(6);
+  .make-md-column(5);
+  
+  @media (min-width: @screen-sm-min) {
+    .make-xs-column-offset(0);
+  }
 }

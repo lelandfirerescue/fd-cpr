@@ -154,16 +154,19 @@ section {
 /* Page Footer */
 
 footer {
-  text-align: center;
-  font-size: 12px;
+  font-size: (0.9 * @font-size-base);
   background-color: #888;
   color: #eee;
   background: url('http://cdn.fd-cpr.com/assets/images/intro.png');
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
-
- .container {
-    padding-top: 96px;
+  
+  .container {
+    padding-top: 60px;
     padding-bottom: 32px;
+  }
+  
+  ul.copyright.list-unstyled li {
+    margin-top: 6px;
   }
 }
 
@@ -241,6 +244,14 @@ footer {
 
 .circle-blue {
     background-color: #428bca;
+}
+
+.logo-circle {
+ .circle();
+ .circle-dark();
+ .pull-left();
+ .hidden-sm();
+ .hidden-xs();
 }
 
 /* Step-by-Step Section Headers */
