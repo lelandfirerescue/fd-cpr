@@ -22,6 +22,18 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
 
+    less: {
+      compile: {
+        options: {
+          strictMath: true,
+          sourceMap: false,
+          outputSourceFiles: true
+        },
+        src: ['css/fdcpr.less', 'css/fdcpr-grid.less'],
+        dest: 'css/fdcpr.css'
+      }
+    },
+
     concat: {
       options: {
         stripBanners: false
@@ -44,7 +56,7 @@ module.exports = function (grunt) {
       css: {
         src: [
           'components/bootstrap-3.3.0/dist/css/bootstrap.css',
-          'css/index.css'
+          'css/fdcpr.css'
         ],
         dest: 'css/dist.css'
       }
@@ -77,7 +89,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['concat:css', 'cssmin:minify']);
+  grunt.registerTask('dist-css', ['less:compile', 'concat:css', 'cssmin:minify']);
 
   grunt.registerTask('js-min', ['uglify:dist']);
 
