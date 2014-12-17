@@ -1,130 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="canonical" href="http://fd-cpr.com/steps.html">
-    <link rel="search" href="/opensearch.xml" title="fdcpr" type="application/opensearchdescription+xml">
-    <link rel="author" href="humans.txt" type="text/plain">
-    <link rel="publisher" href="https://www.facebook.com/lelandfirerescue" type="text/html">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Description" content="When a firefighter suddenly collapses, how do you efficiently get them out of their gear? FD-CPR!">
-    <meta name="title" content="Firefighter Down: CPR - Step by Step Instructions">
-    <title>Firefighter Down: CPR - Step by Step Instructions</title>
-    <!-- Bootstrap + Site Theme -->
-    <link href="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/4b5808e20abb294f7ae8292de5cd60e22fe35926/css/dist.min.css" rel="stylesheet" />
-    <link href="http://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet" type="text/css" />
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="http://fd-cpr.com/steps.html">
+  <link rel="search" href="/opensearch.xml" title="fdcpr" type="application/opensearchdescription+xml">
+  <link rel="author" href="humans.txt" type="text/plain">
+  <link rel="publisher" href="https://www.facebook.com/lelandfirerescue" type="text/html">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="When a firefighter suddenly collapses, how do you efficiently get them out of their gear? FD-CPR!">
+  <meta name="title" content="Firefighter Down: CPR - Step by Step Instructions">
+  <title>Firefighter Down: CPR - Step by Step Instructions</title>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/8da8742c86f8479cccecb5927d614151b102d41f/js/ie-dist.js"></script>
-    <![endif]-->
-<style type="text/css">
-  figcaption {
-    margin-top: 4px;
-    border-top: 6px solid #9b280e;
-    padding-top: 8px;
-  }
-  .video-row {
-    z-index: 2;
-    background-color: #1c1e22;
-    padding-bottom: 32px;
-  }
-  .video-row.alt {
-    background-color: #272b30;
-  }
-  .video-controls {
-    width: 100%;
-    height: auto;
-    z-index: 99;
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .video-controls.press-play {
-    background: #000 url("images/play.svg") no-repeat center center;
-    background-size: 72px 72px;
-  opacity: 0.5;
-  }
-  .video-controls.press-play:hover {
-    opacity: 0.75;
-    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .no-touch .video-controls.press-pause:hover {
-    background: #000 url("images/pause.svg") no-repeat center center;
-    background-size: 72px 72px;
-    opacity: 0.33;
-  }
-  .step-header {
-    position: relative;
-    width: 100%;
-    background-color: #1c1e22;
-    height: 8px;
-  }
-  .step-header.alt {
-    background-color: #272b30;
-  }
-  .step-circle {
-    z-index: 100;
-    left: 50%;
-    position: absolute;
-    background-color: #1c1e22;
-    border-radius: 50%;
-    margin-left: -32px;
-    margin-top: -28px;
-    min-width: 64px;
-    min-height: 64px;
-    border: 1px solid #212121;
-  }
-  .step-header.alt .step-circle {
-    background-color: #272b30;
-  }
-  .step-circle strong {
-    text-align: center;
-    margin: 0 auto;
-    font-size: 3em;
-    display: block;
-  }
-</style>
+  <!-- Bootstrap + Site Theme -->
+  <link href="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/a18cebadd6eeb1925a33c976665679e34994c180/css/dist.min.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Changa+One" rel="stylesheet" type="text/css" />
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/8da8742c86f8479cccecb5927d614151b102d41f/js/ie-dist.js"></script>
+  <![endif]-->
 </head>
 <body>
   <header>
-      <nav class="container" role="navigation">
-          <div class="navbar">
-              <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-items">
-                    <span class="fa fa-bars"><span class="sr-only">Toggle Navigation</span></span>
-                  </button>
-                  <a href="/" title="Home" aria-label="Home" class="logo">FD-CPR</a>
-              </div>
-              <div class="collapse navbar-collapse" id="nav-items">
-                  <ul class="nav navbar-nav nav-items">
-                      <li><a href="/#About">About</a></li>
-                      <li><a href="/#Video">Video</a></li>
-                      <!--<li><a href="#">Science</a></li>-->
-                      <li><a href="faq.html">FAQ</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+    <nav class="container" role="navigation">
+      <div class="navbar">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-items">
+            <span class="fa fa-bars"><span class="sr-only">Toggle Navigation</span></span>
+          </button>
+          <a href="index.html" title="Home" aria-label="Home" class="logo">FD-CPR</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-items">
+          <ul class="nav navbar-nav nav-items">
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#Video">Video</a></li>
+            <li class="active"><a href="#">Step-by-Step</a></li>
+            <!--<li><a href="#">Science</a></li>-->
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <section class="container row">
-    <div class="col-md-6 col-md-offset-3 col-sm-6">
-      <h1>FD-CPR: Step by Step</h1>
+
+  <section class="video-row alt">
+    <div class="video-header-col">
+      <p class="h1">FD-CPR: Step by Step</p>
+      <p class="lead"><strong>FD-CPR</strong> is best performed with four rescuers:
+        <span class="label res1">Rescuer 1</span>
+        <span class="label res2">Rescuer 2</span>
+        <span class="label res3">Rescuer 3</span>
+        <span class="label res4">Rescuer 4</span>. If you are short on manpower,
+        these steps can be accomplished by two or three rescuers. If only two rescuers
+        are available, then chest compressions should be delayed until the firefighter
+        is removed from their gear.
+      </p>
     </div>
   </section>
+
   <div class="step-header">
     <div class="step-circle"><strong>1</strong></div>
   </div>
-  <div class="row video-row">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9" style="position:relative;">
         <div class="video-controls press-play" data-target="step-1"></div>
         <video id="step-1" loop preload muted>
@@ -133,7 +74,7 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 1</span> Drag the downed firefighter to a safe location to initiate care. Drag the firefighter from behind, dropping to the ground and positioning the SCBA bottle between their legs.</p>
+        <p class="lead"><span class="label res1">Rescuer 1</span> Drag the downed firefighter to a safe location to initiate care. Drag the firefighter from behind, dropping to the ground and positioning the SCBA bottle between your legs.</p>
       </figcaption>
     </div>
   </div>
@@ -141,8 +82,8 @@
   <div class="step-header alt">
     <div class="step-circle"><strong>2</strong></div>
   </div>
-  <div class="row video-row alt">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row alt">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-2"></div>
         <video id="step-2" loop muted>
@@ -151,7 +92,12 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 2</span> Pop open the chest clip of the SCBA if applicable and initiated high quality compressions thru the Turnout Gear Jacket.</p>
+        <p class="lead"><span class="label res2">Rescuer 2</span> Pop open the chest clip of the SCBA, if applicable, and initiated high quality compressions thru the turnout gear jacket.</p>
+        <div class="alert alert-default" role="alert">
+          <p><i class="fa fa-exclamation-circle fa-3x pull-left hidden-xs" aria-hidden="true"></i>
+          If the turnout coat can be easily opened, <span class="label res2">Rescuer 2</span> can quickly expose
+          the top half of the chest at this step to improve the quality of CPR.</p>
+        </div>
       </figcaption>
     </div>
   </div>
@@ -159,8 +105,8 @@
   <div class="step-header">
     <div class="step-circle"><strong>3</strong></div>
   </div>
-  <div class="row video-row">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-3"></div>
         <video id="step-3" loop muted>
@@ -169,7 +115,7 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 1</span> If the SCBA mask is still in place, open the SCBA bypass valve. This step can also be performed by Rescuer 2 quickly.</p>
+        <p class="lead"><span class="label res1">Rescuer 1</span> If the SCBA mask is still in place, open the SCBA bypass valve. This step can also be performed by <span class="label res2">Rescuer 2</span> before beginning CPR.</p>
       </figcaption>
     </div>
   </div>
@@ -177,8 +123,8 @@
   <div class="step-header alt">
     <div class="step-circle"><strong>4</strong></div>
   </div>
-  <div class="row video-row alt">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row alt">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-4"></div>
         <video id="step-4" loop muted>
@@ -187,7 +133,11 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 1</span> Remove helmet, mask, and hood.</p>
+        <p class="lead"><span class="label res1">Rescuer 1</span> Remove their helmet, mask, and hood.</p>
+        <div class="alert alert-default" role="alert">
+          <p><i class="fa fa-exclamation-circle fa-3x pull-left hidden-xs" aria-hidden="true"></i>
+          Be sure that the hood is clear of the downed firefighter's chin, as this may cause them to become hung-up during the &quot;pull down&quot;.</p>
+        </div>
       </figcaption>
     </div>
   </div>
@@ -195,8 +145,8 @@
   <div class="step-header">
     <div class="step-circle"><strong>5</strong></div>
   </div>
-  <div class="row video-row">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-5"></div>
         <video id="step-5" loop muted>
@@ -205,7 +155,7 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 3</span> Position yourself at the waist and start to unbuckle the turnout gear jacket from the bottom up.</p>
+        <p class="lead"><span class="label res3">Rescuer 3</span> Start to unbuckle the turnout gear jacket from the bottom up.</p>
       </figcaption>
     </div>
   </div>
@@ -213,8 +163,8 @@
   <div class="step-header alt">
     <div class="step-circle"><strong>6</strong></div>
   </div>
-  <div class="row video-row alt">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row alt">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-6"></div>
         <video id="step-6" loop muted>
@@ -223,7 +173,7 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 1</span> Loosen shoulder straps of the SCBA and position the arms of the down firefighter above his/her head.</p>
+        <p class="lead"><span class="label res1">Rescuer 1</span> <span class="label res3">Rescuer 3</span> Loosen shoulder straps of the SCBA and position the arms of the downed firefighter above his/her head.</p>
       </figcaption>
     </div>
   </div>
@@ -231,8 +181,8 @@
   <div class="step-header">
     <div class="step-circle"><strong>7</strong></div>
   </div>
-  <div class="row video-row">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-7"></div>
         <video id="step-7" loop muted>
@@ -241,7 +191,7 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 1</span> <span class="label label-danger">Rescuer 3</span> Work the zipper (or buckles) of the turnout gear jacket open. Do not interfere with compressions.</p>
+        <p class="lead"><span class="label res1">Rescuer 1</span> <span class="label res3">Rescuer 3</span> Work the zipper (or buckles) of the turnout gear jacket open. Do not interfere with chest compressions.</p>
       </figcaption>
     </div>
   </div>
@@ -249,8 +199,8 @@
   <div class="step-header alt">
     <div class="step-circle"><strong>8</strong></div>
   </div>
-  <div class="row video-row alt">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row alt">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-8"></div>
         <video id="step-8" loop muted>
@@ -259,7 +209,12 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 1</span> Rescuer 1 needs to grasp the turnout gear jacket and the SCBA shoulder straps of the down firefighter firmly. Prepare for the &quot;pull down.&quot;</p>
+        <p class="lead"><span class="label res1">Rescuer 1</span> Grasp the turnout gear jacket and SCBA shoulder straps of the downed firefighter firmly. Prepare for the &quot;pull down.&quot;</p>
+        <div class="alert alert-default" role="alert">
+          <p><i class="fa fa-exclamation-circle fa-3x pull-left hidden-xs" aria-hidden="true"></i>
+          Be sure to work the hands free of any wristlets built into the turnout coat.
+          <span class="label res1">Rescuer 1</span> may also need help holding the arms of the turnout coat.</p>
+        </div>
       </figcaption>
     </div>
   </div>
@@ -267,8 +222,8 @@
   <div class="step-header">
     <div class="step-circle"><strong>9</strong></div>
   </div>
-  <div class="row video-row">
-    <div class="col-md-8 col-md-offset-2 col-xs-12">
+  <div class="video-row">
+    <div class="video-col">
       <div class="embed-responsive embed-responsive-16by9">
         <div class="video-controls press-play" data-target="step-9"></div>
         <video id="step-9" loop muted>
@@ -277,47 +232,70 @@
         </video>
       </div>
       <figcaption>
-        <p class="lead"><span class="label label-danger">Rescuer 3</span> <span class="label label-danger">Rescuer 4</span> Pull the down firefighter toward his/her feet and out of the turnout gear jacket and SCBA.</p>
+        <p class="lead"><span class="label res3">Rescuer 3</span> <span class="label res4">Rescuer 4</span> Pull the downed firefighter toward his/her feet and out of their turnout gear jacket and SCBA.</p>
       </figcaption>
     </div>
   </div>
 
-      <footer role="contentinfo">
-          <div class="container">
-              <div class="row text-center">
-                <ul class="list-inline" aria-label="Facebook pages of Collaborators">
-                  <li aria-label="Leland Volunteer Fire/Rescue Department, Inc."><a href="https://www.facebook.com/lelandfirerescue/" target="_blank"><img src="http://cdn.fd-cpr.com/assets/images/leland-logo-sm.png" width="72" alt="Leland Volunteer Fire/Rescue Department, Inc." /></a></li>
-                  <li aria-label="Ancient Arbor Productions"><a href="https://www.facebook.com/ancientarborproductions/" target="_blank"><img src="http://cdn.fd-cpr.com/assets/images/aap-logo-sm.png" width="72" alt="Ancient Arbor Productions" /></a></li>
-                </ul>
-              </div>
-              <br />
-              <br />
-              <div class="row">
-                <ul class="list-unstyled copyright" aria-label="Important Information">
-                    <li aria-label="Copyright">&copy; <a href="http://www.lelandfirerescue.com">2014 Leland Volunteer Fire/Rescue Department, Inc.</a></li>
-                    <li aria-label="License Information"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Attribution-ShareAlike 4.0 License" style="border-width:0" src="http://cdn.fd-cpr.com/assets/images/cc-by-sa-80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The Firefighter Down: CPR Project</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fd-cpr.com" property="cc:attributionName" rel="cc:attributionURL">Michael Herbert and Christopher Watford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</li>
-                    <li aria-label="Authors"><a rel="author" href="humans.txt"><img alt="humans.txt" src="http://cdn.fd-cpr.com/assets/images/humanstxt-transparent-1ink.png" width="88" /></a></li>
-                </ul>
-              </div>
-          </div>
-      </footer>
+  <div class="step-header alt">
+    <div class="step-circle"><strong>10</strong></div>
+  </div>
+  <div class="video-row alt">
+    <div class="video-col">
+      <img src="http://cdn.fd-cpr.com/assets/images/fdcpr-step-10.jpg" alt="FD-CPR Step 10: Comprehensive resuscitation bundle" class="img-responsive" />
+      <figcaption>
+        <p class="lead"><span class="label label-danger">All Rescuers</span> Begin a comprehensive resuscitation bundle focusing on minimally interrupted chest compressions.</p>
+        <div class="alert alert-default" role="alert">
+          <p><i class="fa fa-exclamation-circle fa-3x pull-left hidden-xs" aria-hidden="true"></i>
+          This step is the most appropriate time for a pulse check and application of an AED or cardiac monitor. ALS procedures
+          should be delayed until adequate resources are available for high performance CPR.</p>
+        </div>
+      </figcaption>
+    </div>
+  </div>
 
-      <script src="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/4b5808e20abb294f7ae8292de5cd60e22fe35926/js/dist.js"></script>
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="row text-center">
+        <ul class="list-inline" aria-label="Facebook pages of Collaborators">
+          <li aria-label="Leland Volunteer Fire/Rescue Department, Inc."><a href="https://www.facebook.com/lelandfirerescue/" target="_blank"><img src="http://cdn.fd-cpr.com/assets/images/leland-logo-sm.png" width="72" alt="Leland Volunteer Fire/Rescue Department, Inc." /></a></li>
+          <li aria-label="Ancient Arbor Productions"><a href="https://www.facebook.com/ancientarborproductions/" target="_blank"><img src="http://cdn.fd-cpr.com/assets/images/aap-logo-sm.png" width="72" alt="Ancient Arbor Productions" /></a></li>
+        </ul>
+      </div>
+      <br />
+      <br />
+      <div class="row">
+        <ul class="list-unstyled copyright" aria-label="Important Information">
+          <li aria-label="Copyright">&copy; <a href="http://www.lelandfirerescue.com">2014 Leland Volunteer Fire/Rescue Department, Inc.</a></li>
+          <li aria-label="License Information"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Attribution-ShareAlike 4.0 License" style="border-width:0" src="http://cdn.fd-cpr.com/assets/images/cc-by-sa-80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The Firefighter Down: CPR Project</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://fd-cpr.com" property="cc:attributionName" rel="cc:attributionURL">Michael Herbert and Christopher Watford</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</li>
+          <li aria-label="Authors"><a rel="author" href="humans.txt"><img alt="humans.txt" src="http://cdn.fd-cpr.com/assets/images/humanstxt-transparent-1ink.png" width="88" /></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+<script src="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/4b5808e20abb294f7ae8292de5cd60e22fe35926/js/dist.js"></script>
 <script type="text/javascript">
+/* fix touchstart problems */
 if (!("ontouchstart" in document.documentElement)) {
 document.documentElement.className += " no-touch";
 }
+
+/* Add video controls */
 $(document).ready(function () {
   var lastVideo, $lastVideo;
 
   $(".video-controls").click(function (evt) {
     var $controls = $(evt.target);
     var video = document.getElementById($controls.data('target'));
+
+    /* toggle play/pause */
     if ($controls.hasClass('press-play')) {
       $controls.removeClass('press-play');
       $controls.addClass('press-pause');
       video.play();
 
+      /* only allow one video to play at a time */
       if (lastVideo && lastVideo !== video) {
         lastVideo.pause();
         $lastVideo.removeClass('press-pause');
@@ -334,6 +312,15 @@ $(document).ready(function () {
     }
   });
 });
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-52973511-3', 'auto');
+ga('send', 'pageview');
 </script>
 </body>
 </html>
