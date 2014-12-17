@@ -21,76 +21,76 @@
       <script src="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/8da8742c86f8479cccecb5927d614151b102d41f/js/ie-dist.js"></script>
     <![endif]-->
 <style type="text/css">
-	figcaption {
-		margin-top: 4px;
-		border-top: 6px solid #9b280e;
-		padding-top: 8px;
-	}
-	.video-row {
-		z-index: 2;
-		background-color: #1c1e22;
-		padding-bottom: 32px;
-	}
-	.video-row.alt {
-		background-color: #272b30;
-	}
-	.video-controls {
-		width: 100%;
-		height: auto;
-		z-index: 99;
-		bottom: 0;
-		content: '';
-		left: 0;
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-	.video-controls.press-play {
-		background: #000 url("images/play.svg") no-repeat center center;
-		background-size: 72px 72px;
-	opacity: 0.5;
-	}
-	.video-controls.press-play:hover {
-		opacity: 0.75;
-		-webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-		-moz-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-		transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	.video-controls.press-pause:hover {
-		background: #000 url("images/pause.svg") no-repeat center center;
-		background-size: 72px 72px;
-	opacity: 0.33;
-	}
-	.step-header {
-		position: relative;
-		width: 100%;
-		background-color: #1c1e22;
-		height: 8px;
-	}
-	.step-header.alt {
-		background-color: #272b30;
-	}
-	.step-circle {
-		z-index: 100;
-		left: 50%;
-		position: absolute;
-		background-color: #1c1e22;
-		border-radius: 50%;
-		margin-left: -32px;
-		margin-top: -28px;
-		min-width: 64px;
-		min-height: 64px;
-		border: 1px solid #212121;
-	}
-	.step-header.alt .step-circle {
-		background-color: #272b30;
-	}
-	.step-circle strong {
-		text-align: center;
-		margin: 0 auto;
-		font-size: 3em;
-		display: block;
-	}
+  figcaption {
+    margin-top: 4px;
+    border-top: 6px solid #9b280e;
+    padding-top: 8px;
+  }
+  .video-row {
+    z-index: 2;
+    background-color: #1c1e22;
+    padding-bottom: 32px;
+  }
+  .video-row.alt {
+    background-color: #272b30;
+  }
+  .video-controls {
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .video-controls.press-play {
+    background: #000 url("images/play.svg") no-repeat center center;
+    background-size: 72px 72px;
+  opacity: 0.5;
+  }
+  .video-controls.press-play:hover {
+    opacity: 0.75;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -moz-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .no-touch .video-controls.press-pause:hover {
+    background: #000 url("images/pause.svg") no-repeat center center;
+    background-size: 72px 72px;
+    opacity: 0.33;
+  }
+  .step-header {
+    position: relative;
+    width: 100%;
+    background-color: #1c1e22;
+    height: 8px;
+  }
+  .step-header.alt {
+    background-color: #272b30;
+  }
+  .step-circle {
+    z-index: 100;
+    left: 50%;
+    position: absolute;
+    background-color: #1c1e22;
+    border-radius: 50%;
+    margin-left: -32px;
+    margin-top: -28px;
+    min-width: 64px;
+    min-height: 64px;
+    border: 1px solid #212121;
+  }
+  .step-header.alt .step-circle {
+    background-color: #272b30;
+  }
+  .step-circle strong {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3em;
+    display: block;
+  }
 </style>
 </head>
 <body>
@@ -115,172 +115,172 @@
           </div>
       </nav>
   </header>
-	<section class="container row">
-		<div class="col-md-6 col-md-offset-3 col-sm-6">
-			<h1>FD-CPR: Step by Step</h1>
-		</div>
-	</section>
-	<div class="step-header">
-		<div class="step-circle"><strong>1</strong></div>
-	</div>
-	<div class="row video-row">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9" style="position:relative;">
-				<div class="video-controls press-play" data-target="step-1"></div>
-				<video id="step-1" loop preload muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-1-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-1-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 1</span> Drag the downed firefighter to a safe location to initiate care. Drag the firefighter from behind, dropping to the ground and positioning the SCBA bottle between their legs.</p>
-			</figcaption>
-		</div>
-	</div>
+  <section class="container row">
+    <div class="col-md-6 col-md-offset-3 col-sm-6">
+      <h1>FD-CPR: Step by Step</h1>
+    </div>
+  </section>
+  <div class="step-header">
+    <div class="step-circle"><strong>1</strong></div>
+  </div>
+  <div class="row video-row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9" style="position:relative;">
+        <div class="video-controls press-play" data-target="step-1"></div>
+        <video id="step-1" loop preload muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-1-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-1-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 1</span> Drag the downed firefighter to a safe location to initiate care. Drag the firefighter from behind, dropping to the ground and positioning the SCBA bottle between their legs.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header alt">
-		<div class="step-circle"><strong>2</strong></div>
-	</div>
-	<div class="row video-row alt">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-2"></div>
-				<video id="step-2" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-2-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-2-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 2</span> Pop open the chest clip of the SCBA if applicable and initiated high quality compressions thru the Turnout Gear Jacket.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header alt">
+    <div class="step-circle"><strong>2</strong></div>
+  </div>
+  <div class="row video-row alt">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-2"></div>
+        <video id="step-2" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-2-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-2-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 2</span> Pop open the chest clip of the SCBA if applicable and initiated high quality compressions thru the Turnout Gear Jacket.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header">
-		<div class="step-circle"><strong>3</strong></div>
-	</div>
-	<div class="row video-row">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-3"></div>
-				<video id="step-3" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-3-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-3-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 1</span> If the SCBA mask is still in place, open the SCBA bypass valve. This step can also be performed by Rescuer 2 quickly.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header">
+    <div class="step-circle"><strong>3</strong></div>
+  </div>
+  <div class="row video-row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-3"></div>
+        <video id="step-3" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-3-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-3-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 1</span> If the SCBA mask is still in place, open the SCBA bypass valve. This step can also be performed by Rescuer 2 quickly.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header alt">
-		<div class="step-circle"><strong>4</strong></div>
-	</div>
-	<div class="row video-row alt">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-4"></div>
-				<video id="step-4" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-4-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-4-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 1</span> Remove helmet, mask, and hood.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header alt">
+    <div class="step-circle"><strong>4</strong></div>
+  </div>
+  <div class="row video-row alt">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-4"></div>
+        <video id="step-4" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-4-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-4-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 1</span> Remove helmet, mask, and hood.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header">
-		<div class="step-circle"><strong>5</strong></div>
-	</div>
-	<div class="row video-row">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-5"></div>
-				<video id="step-5" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-5-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-5-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 3</span> Position yourself at the waist and start to unbuckle the turnout gear jacket from the bottom up.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header">
+    <div class="step-circle"><strong>5</strong></div>
+  </div>
+  <div class="row video-row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-5"></div>
+        <video id="step-5" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-5-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-5-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 3</span> Position yourself at the waist and start to unbuckle the turnout gear jacket from the bottom up.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header alt">
-		<div class="step-circle"><strong>6</strong></div>
-	</div>
-	<div class="row video-row alt">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-6"></div>
-				<video id="step-6" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-6-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-6-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 1</span> Loosen shoulder straps of the SCBA and position the arms of the down firefighter above his/her head.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header alt">
+    <div class="step-circle"><strong>6</strong></div>
+  </div>
+  <div class="row video-row alt">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-6"></div>
+        <video id="step-6" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-6-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-6-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 1</span> Loosen shoulder straps of the SCBA and position the arms of the down firefighter above his/her head.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header">
-		<div class="step-circle"><strong>7</strong></div>
-	</div>
-	<div class="row video-row">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-7"></div>
-				<video id="step-7" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-7-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-7-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 1</span> <span class="label label-danger">Rescuer 3</span> Work the zipper (or buckles) of the turnout gear jacket open. Do not interfere with compressions.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header">
+    <div class="step-circle"><strong>7</strong></div>
+  </div>
+  <div class="row video-row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-7"></div>
+        <video id="step-7" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-7-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-7-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 1</span> <span class="label label-danger">Rescuer 3</span> Work the zipper (or buckles) of the turnout gear jacket open. Do not interfere with compressions.</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header alt">
-		<div class="step-circle"><strong>8</strong></div>
-	</div>
-	<div class="row video-row alt">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-8"></div>
-				<video id="step-8" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-8-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-8-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 1</span> Rescuer 1 needs to grasp the turnout gear jacket and the SCBA shoulder straps of the down firefighter firmly. Prepare for the &quot;pull down.&quot;</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header alt">
+    <div class="step-circle"><strong>8</strong></div>
+  </div>
+  <div class="row video-row alt">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-8"></div>
+        <video id="step-8" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-8-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-8-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 1</span> Rescuer 1 needs to grasp the turnout gear jacket and the SCBA shoulder straps of the down firefighter firmly. Prepare for the &quot;pull down.&quot;</p>
+      </figcaption>
+    </div>
+  </div>
 
-	<div class="step-header">
-		<div class="step-circle"><strong>9</strong></div>
-	</div>
-	<div class="row video-row">
-		<div class="col-md-8 col-md-offset-2 col-xs-12">
-			<div class="embed-responsive embed-responsive-16by9">
-				<div class="video-controls press-play" data-target="step-9"></div>
-				<video id="step-9" loop muted>
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-9-mobile.mp4" type="video/mp4" />
-					<source src="http://cdn.fd-cpr.com/videos/fdcpr-step-9-mobile.webm" type="video/webm" />
-				</video>
-			</div>
-			<figcaption>
-				<p class="lead"><span class="label label-danger">Rescuer 3</span> <span class="label label-danger">Rescuer 4</span> Pull the down firefighter toward his/her feet and out of the turnout gear jacket and SCBA.</p>
-			</figcaption>
-		</div>
-	</div>
+  <div class="step-header">
+    <div class="step-circle"><strong>9</strong></div>
+  </div>
+  <div class="row video-row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+      <div class="embed-responsive embed-responsive-16by9">
+        <div class="video-controls press-play" data-target="step-9"></div>
+        <video id="step-9" loop muted>
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-9-mobile.mp4" type="video/mp4" />
+          <source src="http://cdn.fd-cpr.com/videos/fdcpr-step-9-mobile.webm" type="video/webm" />
+        </video>
+      </div>
+      <figcaption>
+        <p class="lead"><span class="label label-danger">Rescuer 3</span> <span class="label label-danger">Rescuer 4</span> Pull the down firefighter toward his/her feet and out of the turnout gear jacket and SCBA.</p>
+      </figcaption>
+    </div>
+  </div>
 
       <footer role="contentinfo">
           <div class="container">
@@ -304,32 +304,35 @@
 
       <script src="http://cdn.rawgit.com/lelandfirerescue/fd-cpr/4b5808e20abb294f7ae8292de5cd60e22fe35926/js/dist.js"></script>
 <script type="text/javascript">
+if (!("ontouchstart" in document.documentElement)) {
+document.documentElement.className += " no-touch";
+}
 $(document).ready(function () {
-	var lastVideo, $lastVideo;
+  var lastVideo, $lastVideo;
 
-	$(".video-controls").click(function (evt) {
-		var $controls = $(evt.target);
-		var video = document.getElementById($controls.data('target'));
-		if ($controls.hasClass('press-play')) {
-			$controls.removeClass('press-play');
-			$controls.addClass('press-pause');
-			video.play();
+  $(".video-controls").click(function (evt) {
+    var $controls = $(evt.target);
+    var video = document.getElementById($controls.data('target'));
+    if ($controls.hasClass('press-play')) {
+      $controls.removeClass('press-play');
+      $controls.addClass('press-pause');
+      video.play();
 
-			if (lastVideo && lastVideo !== video) {
-				lastVideo.pause();
-				$lastVideo.removeClass('press-pause');
-				$lastVideo.addClass('press-play');
-			}
+      if (lastVideo && lastVideo !== video) {
+        lastVideo.pause();
+        $lastVideo.removeClass('press-pause');
+        $lastVideo.addClass('press-play');
+      }
 
-			lastVideo = video; $lastVideo = $controls;
-		}
-		else {
-			$controls.removeClass('press-pause');
-			$controls.addClass('press-play');
-			video.pause();
-			lastVideo = null; $lastVideo = null;
-		}
-	});
+      lastVideo = video; $lastVideo = $controls;
+    }
+    else {
+      $controls.removeClass('press-pause');
+      $controls.addClass('press-play');
+      video.pause();
+      lastVideo = null; $lastVideo = null;
+    }
+  });
 });
 </script>
 </body>
