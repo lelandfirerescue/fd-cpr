@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 
   var fs = require('fs');
   var path = require('path');
-  
+
   // Project configuration.
   grunt.initConfig({
 
@@ -29,7 +29,7 @@ module.exports = function (grunt) {
           sourceMap: false,
           outputSourceFiles: true
         },
-        src: ['css/fdcpr.less', 'css/fdcpr-grid.less'],
+        src: ['components/bootstrap-3.3.0/less/bootstrap.less', 'css/fdcpr.less', 'css/fdcpr-grid.less'],
         dest: 'css/fdcpr.css'
       }
     },
@@ -52,14 +52,14 @@ module.exports = function (grunt) {
           'components/thirdparty-js/lazy-youtube.min.js'
         ],
         dest: 'js/dist.js'
-      },
+      }/*,
       css: {
         src: [
           'components/bootstrap-3.3.0/dist/css/bootstrap.css',
           'css/fdcpr.css'
         ],
         dest: 'css/dist.css'
-      }
+      }*/
     },
 
     cssmin: {
@@ -79,8 +79,47 @@ module.exports = function (grunt) {
         src: 'components/thirdparty-js/lazy-youtube.js',
         dest: 'components/thirdparty-js/lazy-youtube.min.js'
       }
-    }
-    
+    },
+
+	uncss: {
+	  dist: {
+		options: {
+		  stylesheets: ['css/fdcpr.css'],
+		  ignore: [
+		    '.press-play',
+		    '.press-pause',
+		    /youtube/,
+		    /embed-responsive/,
+		    '.play',
+		    ".fade",
+			".fade.in",
+			".navbar-collapse.in",
+			".collapse",
+			".collapse.in",
+			".navbar-collapse",
+			".navbar-collapse.in",
+			".collapsing",
+			/(#|\.)navbar(\-[a-zA-Z]+)?/,
+			/(#|\.)dropdown(\-[a-zA-Z]+)?/,
+			".open > .dropdown-menu",
+			".open > a",
+			// needed for the `<noscript>` warning; remove them when fixed in uncss
+			".alert-danger",
+			".visible-xs",
+			".noscript-warning",
+			// currently only in a IE conditional so uncss doesn't see it
+			".close",
+			".alert-dismissible"
+		  ],
+		  ignoreSheets : [/fonts.googleapis/],
+		  report: 'gzip' // optional: include to report savings
+		},
+		files: {
+			'css/dist.css': ['index.html', 'steps.html', 'faq.html', 'contact.html']
+		}
+	  }
+	}
+
   });
 
 
@@ -89,11 +128,10 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // CSS distribution task.
-  grunt.registerTask('dist-css', ['less:compile', 'concat:css', 'cssmin:minify']);
+  grunt.registerTask('dist-css', ['less:compile', 'uncss:dist', 'cssmin:minify']);
 
+  // JS distribution task
   grunt.registerTask('js-min', ['uglify:dist']);
-
-  // JS distribution task  
   grunt.registerTask('dist-js', ['concat:iejs', 'concat:js']);
 
   // Default task.
