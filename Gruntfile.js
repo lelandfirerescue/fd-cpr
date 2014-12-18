@@ -81,44 +81,44 @@ module.exports = function (grunt) {
       }
     },
 
-	uncss: {
-	  dist: {
-		options: {
-		  stylesheets: ['css/fdcpr.css'],
-		  ignore: [
-		    '.press-play',
-		    '.press-pause',
-		    /youtube/,
-		    /embed-responsive/,
-		    '.play',
-		    ".fade",
-			".fade.in",
-			".navbar-collapse.in",
-			".collapse",
-			".collapse.in",
-			".navbar-collapse",
-			".navbar-collapse.in",
-			".collapsing",
-			/(#|\.)navbar(\-[a-zA-Z]+)?/,
-			/(#|\.)dropdown(\-[a-zA-Z]+)?/,
-			".open > .dropdown-menu",
-			".open > a",
-			// needed for the `<noscript>` warning; remove them when fixed in uncss
-			".alert-danger",
-			".visible-xs",
-			".noscript-warning",
-			// currently only in a IE conditional so uncss doesn't see it
-			".close",
-			".alert-dismissible"
-		  ],
-		  ignoreSheets : [/fonts.googleapis/],
-		  report: 'gzip' // optional: include to report savings
-		},
-		files: {
-			'css/dist.css': ['index.html', 'steps.html', 'faq.html', 'contact.html']
-		}
-	  }
-	}
+  uncss: {
+    dist: {
+      options: {
+        stylesheets: ['css/fdcpr.css'],
+        ignore: [
+          /press-play/,
+          /press-pause/,
+          /youtube/,
+          /embed-responsive/,
+          '.play',
+          ".fade",
+          ".fade.in",
+          ".navbar-collapse.in",
+          ".collapse",
+          ".collapse.in",
+          ".navbar-collapse",
+          ".navbar-collapse.in",
+          ".collapsing",
+          /(#|\.)navbar(\-[a-zA-Z]+)?/,
+          /(#|\.)dropdown(\-[a-zA-Z]+)?/,
+          ".open > .dropdown-menu",
+          ".open > a",
+          // needed for the `<noscript>` warning; remove them when fixed in uncss
+          ".alert-danger",
+          ".visible-xs",
+          ".noscript-warning",
+          // currently only in a IE conditional so uncss doesn't see it
+          ".close",
+          ".alert-dismissible"
+        ],
+        ignoreSheets : [/fonts.googleapis/],
+        report: 'min' // optional: include to report savings
+      },
+      files: {
+        'css/dist.css': ['index.html', 'steps.html', 'faq.html', 'contact.html']
+      }
+    }
+  }
 
   });
 
