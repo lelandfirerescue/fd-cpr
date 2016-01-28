@@ -91,6 +91,7 @@ module.exports = function (grunt) {
           /youtube/,
           /embed-responsive/,
           '.play',
+          // bootstrap
           ".fade",
           ".fade.in",
           ".navbar-collapse.in",
