@@ -23,5 +23,9 @@
     "grunt-uncss": "^0.3.8",
     "load-grunt-tasks": "~1.0.0",
     "time-grunt": "~1.0.0"
+  },
+  "dependencies": {
+    "grunt-contrib-uglify": "^0.6.0",
+    "uglify": "^0.1.5"
   }
 }

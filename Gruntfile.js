@@ -34,6 +34,20 @@ module.exports = function (grunt) {
       }
     },
 
+    uglify: {
+      options: {
+        preserveComments: 'some'
+      },
+      bootstrap: {
+        src: 'components/bootstrap-3.3.0/js/collapse.js',
+        dest: 'components/thirdparty-js/bootstrap-collapse-only.min.js'
+      },
+      lazyYoutube: {
+        src: 'components/thirdparty-js/lazy-youtube.js',
+        dest: 'components/thirdparty-js/lazy-youtube.min.js'
+      }
+    },
+
     concat: {
       options: {
         stripBanners: false
@@ -48,8 +62,8 @@ module.exports = function (grunt) {
       js: {
         src: [
           'components/thirdparty-js/jquery-2.1.1.js',
-          'components/bootstrap-3.3.0/dist/js/bootstrap.min.js',
-          'components/thirdparty-js/lazy-youtube.min.js'
+          '<%= uglify.bootstrap.dest %>',
+          '<%= uglify.lazyYoutube.dest %>'
         ],
         dest: 'js/dist.js'
       }/*,
@@ -71,13 +85,6 @@ module.exports = function (grunt) {
       minify: {
         src: 'css/dist.css',
         dest: 'css/dist.min.css'
-      }
-    },
-
-    uglify: {
-      dist: {
-        src: 'components/thirdparty-js/lazy-youtube.js',
-        dest: 'components/thirdparty-js/lazy-youtube.min.js'
       }
     },
 
@@ -132,10 +139,9 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['less:compile', 'uncss:dist', 'cssmin:minify']);
 
   // JS distribution task
-  grunt.registerTask('js-min', ['uglify:dist']);
-  grunt.registerTask('dist-js', ['concat:iejs', 'concat:js']);
+  grunt.registerTask('js-min', ['uglify:bootstrap', 'uglify:lazyYoutube']);
+  grunt.registerTask('dist-js', ['js-min', 'concat:iejs', 'concat:js']);
 
   // Default task.
   grunt.registerTask('default', ['dist-css', 'dist-js']);
 };
-
