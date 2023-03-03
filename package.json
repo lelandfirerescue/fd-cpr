@@ -5,7 +5,7 @@
   "keywords": [
     "web"
   ],
-  "homepage": "http://fd-cpr.com",
+  "homepage": "https://fd-cpr.com",
   "author": "Christopher Watford and Michael Herbert",
   "scripts": {
     "css": "grunt dist-css"

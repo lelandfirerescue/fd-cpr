@@ -1,6 +1,6 @@
 /* TEAM */
   Founder:Michael Herbert
-  Contact: mike.herbert [at] lelandfirerescue.com
+  Contact: mike.herbert.nrp [at] gmail.com
   Twitter: @bigGermanMike
   From:Leland, North Carolina, USA
   
@@ -19,11 +19,10 @@
   Location:Wilmington, North Carolina, USA
   
   Actors:Justin Aaron, Kevin Brown, Louis Coppola, Michael Herbert, David Owens, Brandon Price, JR Spencer
-  Contact: info [at] fd-cpr.com
   
 /* SITE */
-  Last update:2018/01/23
+  Last update: 2023/03/02
   Language: English
   Doctype: HTML5
   Components: Bootstrap, FontAwesome
-  IDE: Github, Notepad, Nano, Paint.Net
+  IDE: Github, VS Code, Nano, Paint.Net

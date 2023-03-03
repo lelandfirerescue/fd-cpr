@@ -1927,10 +1927,8 @@ h2 {
 .fd-cpr-logo-sm,
 .aap-logo-sm,
 .cc-by-sa-80x15,
-.leland-logo-sm,
-.leland-logo-sm-dark,
 .humanstxt-transparent-1ink {
-  background: url('http://cdn.fd-cpr.com/assets/images/fdcpr-sprites.png') no-repeat;
+  background: url('//cdn.fd-cpr.com/assets/images/fdcpr-sprites.png') no-repeat;
 }
 
 .fd-cpr-logo-sm {
@@ -1951,18 +1949,6 @@ h2 {
   height: 15px;
 }
 
-.leland-logo-sm {
-  background-position: -237px -59px;
-  width: 72px;
-  height: 72px;
-}
-
-.leland-logo-sm-dark {
-  background-position: -551px -1px;
-  width: 128px;
-  height: 128px;
-}
-
 .humanstxt-transparent-1ink {
   background-position: -323px -50px;
   width: 88px;
@@ -1974,7 +1960,7 @@ h2 {
 /* Z-Index */
 
 body.with-header-logo {
-  background: url('http://cdn.fd-cpr.com/assets/images/header-bg.jpg') no-repeat center center fixed;
+  background: url('//cdn.fd-cpr.com/assets/images/header-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -2160,37 +2146,6 @@ footer ul.copyright.list-unstyled li {
 
 /* Circle for Logo */
 
-.logo-circle {
-  width: 160px;
-  height: 160px;
-  border-radius: 160px;
-  line-height: 160px;
-  text-align: center;
-  display: inline-flex;
-  margin: 16px;
-  background-color: #333333;
-  background-color: rgba(51, 51, 51, 0.6);
-  float: left;
-  float: left !important;
-}
-
-.logo-circle > div {
-  margin: auto auto;
-  opacity: 1;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .logo-circle {
-    display: none !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .logo-circle {
-    display: none !important;
-  }
-}
-
 /* Step-by-Step Section Headers */
 
 .step-header {
@@ -2287,7 +2242,7 @@ figcaption {
 }
 
 .video-controls.press-play {
-  background: #000000 url("http://cdn.fd-cpr.com/assets/images/play.svg") no-repeat center center;
+  background: #000000 url("//cdn.fd-cpr.com/assets/images/play.svg") no-repeat center center;
   background-size: 72px 72px;
   opacity: 0.5;
 }
@@ -2300,7 +2255,7 @@ figcaption {
 }
 
 .no-touch .video-controls.press-pause:hover {
-  background: #000000 url("http://cdn.fd-cpr.com/assets/images/pause.svg") no-repeat center center;
+  background: #000000 url("//cdn.fd-cpr.com/assets/images/pause.svg") no-repeat center center;
   background-size: 72px 72px;
   opacity: 0.33;
 }

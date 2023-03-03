@@ -8141,7 +8141,7 @@ a.list-group-item-danger.active:focus {
 .leland-logo-sm-dark,
 .humanstxt-transparent-1ink,
 .humanstxt-transparent-color {
-  background: url('http://cdn.fd-cpr.com/assets/images/fdcpr-sprites.png') no-repeat;
+  background: url('//cdn.fd-cpr.com/assets/images/fdcpr-sprites.png') no-repeat;
 }
 .fd-cpr-logo-lg {
   background-position: 0 0;
@@ -8196,7 +8196,7 @@ a.list-group-item-danger.active:focus {
 /* Additional Colors */
 /* Z-Index */
 body.with-header-logo {
-  background: url('http://cdn.fd-cpr.com/assets/images/header-bg.jpg') no-repeat center center fixed;
+  background: url('//cdn.fd-cpr.com/assets/images/header-bg.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 header {
@@ -8523,7 +8523,7 @@ figcaption {
   content: '';
 }
 .video-controls.press-play {
-  background: #000000 url("http://cdn.fd-cpr.com/assets/images/play.svg") no-repeat center center;
+  background: #000000 url("//cdn.fd-cpr.com/assets/images/play.svg") no-repeat center center;
   background-size: 72px 72px;
   opacity: 0.5;
 }
@@ -8534,7 +8534,7 @@ figcaption {
   transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .no-touch .video-controls.press-pause:hover {
-  background: #000000 url("http://cdn.fd-cpr.com/assets/images/pause.svg") no-repeat center center;
+  background: #000000 url("//cdn.fd-cpr.com/assets/images/pause.svg") no-repeat center center;
   background-size: 72px 72px;
   opacity: 0.33;
 }
