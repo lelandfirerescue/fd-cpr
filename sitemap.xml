@@ -3,14 +3,14 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>http://fd-cpr.com/</loc>
+    <loc>https://fd-cpr.com/</loc>
     <lastmod>2015-06-30T14:17:59+00:00</lastmod>
     <video:video>     
       <video:player_loc allow_embed="yes" autoplay="ap=1">
         https://www.youtube.com/v/SeNZnm_ayiA&amp;fs=1
       </video:player_loc>
       <video:thumbnail_loc>
-        http://www.fd-cpr.com/images/og-picture.jpg
+        https://www.fd-cpr.com/images/og-picture.jpg
       </video:thumbnail_loc>
       <video:title>Firefighter Down: CPR - Prevention, Recognition, and Response</video:title>  
       <video:description>
@@ -19,23 +19,23 @@
     </video:video>
   </url>
   <url>
-    <loc>http://fd-cpr.com/index.html</loc>
+    <loc>https://fd-cpr.com/index.html</loc>
     <lastmod>2015-06-30T14:17:59+00:00</lastmod>
   </url>
   <url>
-    <loc>http://fd-cpr.com/steps.html</loc>
+    <loc>https://fd-cpr.com/steps.html</loc>
     <lastmod>2015-06-30T14:17:59+00:00</lastmod>
   </url>
   <url>
-    <loc>http://fd-cpr.com/faq.html</loc>
+    <loc>https://fd-cpr.com/faq.html</loc>
     <lastmod>2015-06-30T14:17:59+00:00</lastmod>
   </url>
   <url>
-    <loc>http://fd-cpr.com/contact.html</loc>
+    <loc>https://fd-cpr.com/contact.html</loc>
     <lastmod>2015-06-30T14:17:59+00:00</lastmod>
   </url>
   <url>
-    <loc>http://fd-cpr.com/humans.txt</loc>
+    <loc>https://fd-cpr.com/humans.txt</loc>
     <lastmod>2015-06-30T14:17:59+00:00</lastmod>
   </url>
 </urlset>

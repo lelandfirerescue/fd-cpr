@@ -5,5 +5,5 @@
   <Description>Search fd-cpr.com</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Url method="get" type="text/html" 
-    template="http://www.google.com/search?q={searchTerms}+site%3Afd-cpr.com&amp;hl=en"/>
+    template="https://www.google.com/search?q={searchTerms}+site%3Afd-cpr.com&amp;hl=en"/>
 </OpenSearchDescription>
